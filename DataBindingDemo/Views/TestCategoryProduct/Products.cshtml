@@ -1,0 +1,20 @@
+﻿@model IEnumerable<DataBindingDemo.Models.Product>
+
+<table border="1" align="center">
+    <caption>Products List</caption>
+    <tr>
+        <th>Product Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Photo</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td><img src='@Url.Content(item.Photo)' width="60" height="60"/></td>
+        </tr>
+    }
+</table>

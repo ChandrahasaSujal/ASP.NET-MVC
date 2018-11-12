@@ -107,9 +107,13 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\SampleController.cs" />
+    <Compile Include="Controllers\TestCategoryProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\CategoryData.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +128,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Products\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Sample\Index.cshtml" />
+    <Content Include="Views\Sample\Login.cshtml" />
+    <Content Include="Views\TestCategoryProduct\Category.cshtml" />
+    <Content Include="Views\TestCategoryProduct\Products.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<DataBindingDemo.Models.Category>
+
+<h2>List of categories</h2>
+<table align="center" border="1">
+    
+    <tr>
+        <th>Category Id</th>
+        <th>Category Name</th>
+        <th>View Stock</th>
+    </tr>
+    @foreach(var category in Model)
+    {
+    <tr>
+        <td>@category.CategoryId</td>
+        <td>@category.CategoryName</td>
+        <td>@Html.ActionLink("Details", "Products",new {id=category.CategoryId})</td>
+    </tr>
+    }
+</table>
