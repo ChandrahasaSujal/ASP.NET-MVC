@@ -93,6 +93,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Mobile.jpg" />
     <Content Include="Images\shoe.png" />
     <Content Include="Images\Tv.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -101,20 +102,25 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Views\TestCategoryProduct\Mobile.jpg" />
     <Content Include="Web.config" />
     <Content Include="Views\Products\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\PartialController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\SampleController.cs" />
     <Compile Include="Controllers\TestCategoryProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AmazonData.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CategoryData.cs" />
+    <Compile Include="Models\CategoryPartialDemo.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductPartialDemo.cs" />
     <Compile Include="Models\ProductsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,6 +138,9 @@
     <Content Include="Views\Sample\Login.cshtml" />
     <Content Include="Views\TestCategoryProduct\Category.cshtml" />
     <Content Include="Views\TestCategoryProduct\Products.cshtml" />
+    <Content Include="Views\Partial\Category.cshtml" />
+    <Content Include="Views\Partial\Product.cshtml" />
+    <Content Include="Views\Partial\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

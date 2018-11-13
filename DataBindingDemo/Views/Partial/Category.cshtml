@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DataBindingDemo.Models.CategoryPartialDemo>
+
+
+
+<h2>Category list</h2>
+<br />
+
+<ol>
+    @foreach(var category in Model)
+    {
+        <li>@category.CategoryName</li>
+    }
+</ol>
