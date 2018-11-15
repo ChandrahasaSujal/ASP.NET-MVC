@@ -16,7 +16,9 @@ namespace DataBindingDemo.Models
         List<ProductPartialDemo> products = new List<ProductPartialDemo>()
         {
             new ProductPartialDemo{ProductId=1,ProductName="Samsung TV"},
-            new ProductPartialDemo{ProductId=2,ProductName="Nike Shoe"}
+            new ProductPartialDemo{ProductId=2,ProductName="Nike Shoe"},
+            new ProductPartialDemo{ProductId=3,ProductName="Mobile"},
+            new ProductPartialDemo{ProductId=4,ProductName="Lee Cooper Boots"}
         };
 
         public IEnumerable<CategoryPartialDemo> CategoryList()
